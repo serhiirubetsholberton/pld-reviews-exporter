@@ -1,0 +1,32 @@
+{
+  "name": "pld-reviews-exporter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "html-webpack-plugin": "^5.5.1",
+    "typescript": "^5.1.3",
+    "ts-loader": "^9.4.3"
+  },
+  "devDependencies": {
+    "webpack": "^5.85.1",
+    "webpack-cli": "^5.1.3",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serhiirubetsholberton/pld-reviews-exporter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serhiirubetsholberton/pld-reviews-exporter/issues"
+  },
+  "homepage": "https://github.com/serhiirubetsholberton/pld-reviews-exporter#readme"
+}
