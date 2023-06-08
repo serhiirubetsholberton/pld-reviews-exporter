@@ -1,0 +1,33 @@
+.container {
+  padding-top: 50px;
+}
+
+pre {
+  font-size: 10px;
+  background: #d1cdcd;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.upload-file-container {
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+.alert {
+  font-size: 12px;
+  width: 260px;
+  margin: auto;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+}
+
+.alert-dismissible .btn-close {
+  padding: 13px;
+}
