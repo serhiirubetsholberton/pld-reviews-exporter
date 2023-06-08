@@ -3,6 +3,7 @@ import {getCodeToPaste} from "./codeToPase";
 import {IExcelData, IMapStudentIdToScore} from "./types";
 
 const alert = document.querySelector('.alert');
+const background = document.querySelector('.dark-background');
 
 function getMapStudentIdToScore(data: IExcelData[]) {
   return data.reduce((prev: IMapStudentIdToScore, current: IExcelData) => {
@@ -25,10 +26,12 @@ export function onExcelUpload(reader: FileReader) {
       const code = getCodeToPaste(mapStudentIdToScore);
       navigator.clipboard.writeText(code);
 
+      background.classList.add('dark-background-showed')
       alert.classList.add('show');
 
       setTimeout(() => {
         alert.classList.remove('show');
+        background.classList.remove('dark-background-showed');
       }, 4000)
 
       document.querySelector('pre').innerHTML = code;

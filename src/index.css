@@ -4,7 +4,8 @@
 
 pre {
   font-size: 10px;
-  background: #d1cdcd;
+  background: #f4f2f2;;
+  font-family: monospace;
 }
 
 .hidden {
@@ -22,12 +23,27 @@ pre {
   width: 260px;
   margin: auto;
   position: absolute;
-  top: 15px;
+  top: 255px;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px;
+  z-index: 1000;
 }
 
 .alert-dismissible .btn-close {
   padding: 13px;
+}
+
+.dark-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(000, 0, 0, 0.6);
+  display: none;
+}
+
+.dark-background-showed {
+  display: block;
 }
